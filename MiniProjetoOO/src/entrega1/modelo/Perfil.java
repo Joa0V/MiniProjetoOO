@@ -7,7 +7,6 @@ public class Perfil extends Pessoa{
 	private float salario;
 	
 
-
 	public String getFormacao() {
 		return formacao;
 	}

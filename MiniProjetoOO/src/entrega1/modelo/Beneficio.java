@@ -37,6 +37,7 @@ public class Beneficio implements PadraoBeneficio{
 		}
 	}
 	
+	
 	public String toString() {
 		
 		String status = getStatus() ? "validado" : "invalidado";

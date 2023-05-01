@@ -38,6 +38,7 @@ public class Main {
 			System.out.println("\nVoce aplicou para a vaga!\n" + vaga.toString());
 		}
 		
+		
 		leitor.close();
 	}
 	

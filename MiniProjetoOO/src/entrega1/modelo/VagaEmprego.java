@@ -57,6 +57,7 @@ public class VagaEmprego {
 		this.beneficio_ofertado = beneficio_ofertado;
 	}
 	
+	
 	public String toString() {
 		
 		String status_vaga = getStatus() ? "aberta" : "aplicada";
