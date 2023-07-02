@@ -108,7 +108,6 @@ public class TelaVagaEmprego implements ActionListener, ListSelectionListener{
 			JOptionPane.showMessageDialog(null,"Opção não encontrada!", null, 
 					JOptionPane.ERROR_MESSAGE);
 		}
-
 	}
 
 	/**
