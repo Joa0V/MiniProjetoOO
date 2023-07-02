@@ -1,10 +1,33 @@
-package entrega1.modelo;
+package modelo;
+
+/**
+ * Classe Beneficio simula o comportamento de um beneficio ofertado em uma oportunidade de emprego, implementa a interface PadraoBeneficio
+ *
+ */
 
 public class Beneficio implements PadraoBeneficio{
 	
 	private String tipo;
 	private float porcentagem_salario;
 	private boolean status;
+	
+	public Beneficio() {
+		super();
+	}
+	
+/**
+ * Construtor da classe Beneficio	
+ * @param t
+ * @param porcentagem_salario
+ * @param status
+ */
+
+	public Beneficio(String t, float porcentagem_salario, boolean status) {
+		
+		tipo = t;
+		this.porcentagem_salario = porcentagem_salario;
+		this.status = status;
+	}
 	
 	public String getTipo() {
 		return tipo;
@@ -27,6 +50,11 @@ public class Beneficio implements PadraoBeneficio{
 		this.status = status;
 	}
 
+	/**
+	 * Implementa o metodo da interface PadraoBeneficio. Tem o proposito de fazer o controle dos gastos da empresa com os beneficios ofertados
+	 * 
+	 */
+	
 	public void controlarCusto(float porcentagem_salario) {
 		
 		if (porcentagem_salario <= 20) {
