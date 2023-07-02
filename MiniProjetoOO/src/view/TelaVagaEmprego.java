@@ -14,9 +14,9 @@ public class TelaVagaEmprego implements ActionListener, ListSelectionListener{
 
 	private JFrame janela;
 	private JLabel titulo;
-	private JButton cadastroEmprego; //aluno
+	private JButton cadastroEmprego; 
 	private JButton refreshEmprego;
-	private JButton cadastroEstagio; //prof
+	private JButton cadastroEstagio; 
 	private JButton refreshEstagio;
 	private static ControleDados dados;
 	private JList<String> listaEmpregosCadastrados;
@@ -186,7 +186,8 @@ public class TelaVagaEmprego implements ActionListener, ListSelectionListener{
 	}
 
 	/**
-	 * Captura eventos relacionados aos botões da interface
+	 * Captura eventos relacionados aos botões da interface. Aciona o metodo de cadastro de uma nova vaga
+	 * ou refresh na JList
 	 */
 	public void actionPerformed(ActionEvent e) {
 		
@@ -215,7 +216,7 @@ public class TelaVagaEmprego implements ActionListener, ListSelectionListener{
 	}
 
 	/**
-	 * Captura eventos relacionados ao JList
+	 * Captura eventos relacionados ao JList. Aciona uma tela de detalhamento
 	 */
 	public void valueChanged(ListSelectionEvent e) {
 		

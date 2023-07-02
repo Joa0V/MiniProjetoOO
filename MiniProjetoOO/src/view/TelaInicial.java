@@ -88,7 +88,9 @@ public class TelaInicial implements ActionListener{
 		}
 
 	}
-	
+	/**
+	 * Metodo para mensagem em caso de falha na busca
+	 */
 	public void mensagemErroBusca() {
 		JOptionPane.showMessageDialog(null, "Vaga não encontrada!", null, 
 				JOptionPane.INFORMATION_MESSAGE);

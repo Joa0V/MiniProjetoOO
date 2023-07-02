@@ -159,7 +159,11 @@ public class TelaDetalheVaga implements ActionListener {
 		botaoExcluir.addActionListener(this);
 	}
 
-
+	/**
+	 * Captura eventos relacionados aos botões da interface. Aciona o metodo de salvar alteracoes
+	 * em uma vaga ou exclui-la
+	 */
+	
 	public void actionPerformed(ActionEvent e) {
 		
 		Object src = e.getSource();
@@ -221,31 +225,46 @@ public class TelaDetalheVaga implements ActionListener {
 		}
 	}
 
+	
+	/**
+	 * Metodo para mensagem em caso de exito na exclusao
+	 */
 	public void mensagemSucessoExclusao() {
 		JOptionPane.showMessageDialog(null, "Os dados foram excluidos com sucesso", null, 
 				JOptionPane.INFORMATION_MESSAGE);
 		janela.dispose();
 	}
 
+	/**
+	 * Metodo para mensagem em caso de exito no cadastro
+	 */
 	public void mensagemSucessoCadastro() {
 		JOptionPane.showMessageDialog(null, "Os dados foram salvos com sucesso", null, 
 				JOptionPane.INFORMATION_MESSAGE);
 		janela.dispose();
 	}
 
+	/**
+	 * Metodo para mensagem em caso de falha no cadastro
+	 */
 	public void mensagemErroCadastro() {
 		JOptionPane.showMessageDialog(null,"ERRO AO SALVAR OS DADOS!\n "
-				+ "Pode ter ocorrido um dos dois erros a seguir:  \n"
-				+ "1. Nem todos os campos foram preenchidos \n"
-				+ "2. Campos numericos não contém apenas números", null, 
+				+ "Pode ter ocorrido o seguinte erro:  \n"
+				+ "Campos numericos não contém apenas números", null, 
 				JOptionPane.ERROR_MESSAGE);
 	}
 
+	/**
+	 * Metodo para mensagem em caso de falha na exclusao de uma vaga de emprego
+	 */
 	public void mensagemErroExclusaoEmprego() {
 		JOptionPane.showMessageDialog(null,"Ocorreu um erro ao excluir o dado.\n ", null, 
 				JOptionPane.ERROR_MESSAGE);
 	}
 	
+	/**
+	 * Metodo para mensagem em caso de falha na exclusao de uma vaga de estagio
+	 */
 	public void mensagemErroExclusaoEstagio() {
 		JOptionPane.showMessageDialog(null,"Ocorreu um erro ao excluir o dado.\n ", null, 
 				JOptionPane.ERROR_MESSAGE);
