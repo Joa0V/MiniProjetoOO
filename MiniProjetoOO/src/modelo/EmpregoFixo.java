@@ -18,11 +18,11 @@ public class EmpregoFixo extends VagaEmprego{
 	
 	/**
 	 * Construtor da classe EmpregoFixo	
-	 * @param func
-	 * @param form
-	 * @param salario
-	 * @param emp
-	 * @param beneficio
+	 * @param func Funcao a ser exercida
+	 * @param form Formacao necessaria
+	 * @param salario Salario oferecido
+	 * @param emp Empresa
+	 * @param beneficio Beneficio ofertado
 	 */
 
 	public EmpregoFixo(String func, String form, float salario, String emp, Beneficio beneficio) {

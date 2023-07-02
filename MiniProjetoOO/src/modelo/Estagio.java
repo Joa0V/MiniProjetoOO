@@ -19,12 +19,12 @@ public class Estagio extends VagaEmprego{
 
 	/**
 	 * Construtor da classe Estagio
-	 * @param func
-	 * @param form
-	 * @param emp
-	 * @param beneficio
-	 * @param t
-	 * @param cursos
+	 * @param func Funcao a ser exercida
+	 * @param form Formacao necessaria
+	 * @param emp Empresa
+	 * @param beneficio Beneficio ofertado
+	 * @param t Tempo de vinculo
+	 * @param cursos Cursos aceitos
 	 */
 	
 	public Estagio(String func, String form, String emp, Beneficio beneficio, int t, String cursos) {

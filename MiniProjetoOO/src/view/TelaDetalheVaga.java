@@ -43,10 +43,10 @@ public class TelaDetalheVaga implements ActionListener {
 	/**
 	 * Metodo que definir as caracteristicas da tela de detalhamento. A depender do parametro op sera destinada a uma tela de 
 	 * cadastro ou edicao de uma determinada oportunidade de emprego, a qual pode ser uma vaga de emprego ou estagio 
-	 * @param op
-	 * @param d
-	 * @param p
-	 * @param pos
+	 * @param op Seletor da acao a ser feita
+	 * @param d Instancia de ControleDados que contem as oportunidades de emprego
+	 * @param p Referente a tela anterior (tela de detalhamento)
+	 * @param pos Posicao da oportunidade de emprego selecionada
 	 */
 	
 	public void inserirEditar(int op, ControleDados d, 

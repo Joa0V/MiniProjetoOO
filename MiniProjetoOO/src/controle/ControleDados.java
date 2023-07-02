@@ -59,7 +59,7 @@ public class ControleDados {
 	
 	/**
 	 * Metodo de busca de uma determinada vaga de estagio presente em uma instancia da classe Dados
-	 * @param s
+	 * @param s Funcao buscada
 	 * @return Estagio[]
 	 */
 	
@@ -71,7 +71,7 @@ public class ControleDados {
 	
 	/**
 	 * Metodo de busca de uma determinada vaga de emprego presente em uma instancia da classe Dados
-	 * @param s
+	 * @param s Funcao buscada
 	 * @return EmpregoFixo[]
 	 */
 	
@@ -85,7 +85,7 @@ public class ControleDados {
 	 * uma nova vaga de emprego ou editada uma ja existente
 	 * True: foi cadastrado ou editado
 	 * False: nao foi cadastrado ou editado
-	 * @param  dadosEmpregoFixo
+	 * @param  dadosEmpregoFixo Novos dados a serem salvos
 	 * @return boolean
 	 */
 	
@@ -108,7 +108,7 @@ public class ControleDados {
 	 * uma nova vaga de estagio ou editada uma ja existente
 	 * True: foi cadastrado ou editado
 	 * False: nao foi cadastrado ou editado
-	 * @param  dadosEstagio
+	 * @param  dadosEstagio Novos dados a serem salvos
 	 * @return boolean
 	 */
 	
@@ -129,8 +129,8 @@ public class ControleDados {
 	/**
 	 * Metodo para criar um array de int que relacione os index de um array de busca de uma oportunidade de emprego com um array de todas as oportunidades de emprego de mesmo tipo.
 	 * Caso seletor seja igual a 1, trata-se de dados de instancias da classe EmpregoFixo, senao, trata-se de dados de instancias de classe Estagio
-	 * @param funcao
-	 * @param seletor
+	 * @param funcao Funcao buscada
+	 * @param seletor Selecao do tipo de oportunidade de emprego. EmpregoFixo, caso seletor se igual a 1, Estagio, caso seja igual a 2
 	 * @return int[] 
 	 */
 	public int[] getIndex(String funcao, int seletor) {
@@ -195,7 +195,7 @@ public class ControleDados {
 	 * Metodo para remover uma vaga de emprego cadastrada a partir de sua posicao em um array da classe EmpregoFixo. Altera a variavel qtdEmpregoFixo
 	 * True: foi removida
 	 * False: nao foi removida
-	 * @param i
+	 * @param i Posicao em um array da Classe EmpregoFixo referente a oportunidade a ser excluida
 	 * @return boolean
 	 */
 	
@@ -234,7 +234,7 @@ public class ControleDados {
 	 * Metodo para remover uma vaga de estagio cadastrada a partir de sua posicao em um array da classe Estagio. Altera a variavel qtdEstagio
 	 * True: foi removida
 	 * False: nao foi removida
-	 * @param i
+	 * @param i Posicao em um array da Classe Estagio referente a oportunidade a ser excluida
 	 * @return boolean
 	 */
 	
@@ -277,7 +277,7 @@ public class ControleDados {
 	 * Metodo para verificar se uma vaga pertence a um array da classe EmpregoFixo dada uma String s referente a funcao a ser exercida 
 	 * True: ha vaga(s)
 	 * False: nao ha vaga(s) 
-	 * @param s
+	 * @param s Funcao buscada
 	 * @return boolean
 	 */
 	
@@ -298,7 +298,7 @@ public class ControleDados {
 	 * Metodo para verificar se uma vaga pertence a um array da classe Estagio dada uma String referente a funcao a ser exercida 
 	 * True: ha vaga(s)
 	 * False: nao ha vaga(s) 
-	 * @param s
+	 * @param s Funcao buscada
 	 * @return boolean
 	 */
 	
@@ -318,7 +318,7 @@ public class ControleDados {
 	 * Metodo que verifica se foi encontrado uma oportunidade de emprego com o atributo funcao igual a String s. 
 	 * True: nao foi encontrado
 	 * False: foi encontrado 
-	 * @param s
+	 * @param s Funcao buscada
 	 * @return boolean
 	 */
 	public boolean verificarNulidadeControle(String s) {

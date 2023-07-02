@@ -14,7 +14,7 @@ public class ControleEstagio {
 	
 	/**
 	 * Construtor de ControleEstagio
-	 * @param data
+	 * @param data Instancia de ControleDados
 	 */
 	public ControleEstagio(ControleDados data) {
 		
@@ -24,7 +24,7 @@ public class ControleEstagio {
 	
 	/**
 	 * Construtor de ControleEstagio
-	 * @param array
+	 * @param array Array de classe Estagio
 	 */
 	public ControleEstagio(Estagio[] array) {
 		

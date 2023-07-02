@@ -144,7 +144,7 @@ public class Dados {
 	 * Retorna um array da classe Estagio, resultado de uma busca a partir de uma string. O parametro s é primeiro comparado com os atributos
 	 * funcao de cada de oportunidade de estagio, entao e construido um array que comporta todas as instancias da classe Estagio as quais tem 
 	 * o atributo igual ao parametro s.
-	 * @param s
+	 * @param s Funcao buscada
 	 * @return Estagio[]
 	 */
 	
@@ -182,7 +182,7 @@ public class Dados {
 	 * Retorna um array da classe EmpregoFixo, resultado de uma busca a partir de uma string. O parametro s é primeiro comparado com os 
 	 * atributos funcao de cada de oportunidade de emprego, entao e construido um array que comporta todas as instancias da classe 
 	 * EmpregoFixo as quais tem o atributo igual ao parametro s.
-	 * @param s
+	 * @param s Funcao buscada
 	 * @return EmpregoFixo[]
 	 */
 	
@@ -218,8 +218,8 @@ public class Dados {
 
 /**
  * Metodo para inserir uma nova vaga de emprego ou editar um ja existente	
- * @param e
- * @param i
+ * @param e Instancia de EmpregoFixo que contem a oportunidade de emprego a ser alterada
+ * @param i Posicao do elemento do array a ser modificao
  */
 
 	public void inserirEditarEmprego(EmpregoFixo e, int i) {
@@ -230,8 +230,8 @@ public class Dados {
 	
 /**
  * Metodo para inserir uma nova vaga de estagio ou editar um ja existente	
- * @param e
- * @param i
+ * @param e Instancia de Estagio que contem a oportunidade de emprego a ser alterada
+ * @param i Posicao do elemento do array a ser modificao
  */
 
 	public void inserirEditarEstagio(Estagio e, int i) {

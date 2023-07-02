@@ -14,7 +14,7 @@ public class ControleEmprego {
 	
 	/**
 	 * Construtor da classe ControleEmprego
-	 * @param data
+	 * @param data Instancia de ControleDados
 	 */
 	
 	public ControleEmprego(ControleDados data) {
@@ -25,7 +25,7 @@ public class ControleEmprego {
 	
 	/**
 	 * Construtor da classe ControleEmprego
-	 * @param array
+	 * @param array Array de classe Emprego
 	 */
 	public ControleEmprego(EmpregoFixo[] array) {
 		

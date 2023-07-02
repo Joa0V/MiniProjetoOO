@@ -17,10 +17,10 @@ public abstract class VagaEmprego {
 
 	/**
 	 * Construtor da classe VagaEmprego
-	 * @param funcao
-	 * @param formacao
-	 * @param empresa
-	 * @param beneficio_ofertado
+	 * @param funcao Funcao a ser exercida
+	 * @param formacao Formacao necessaria
+	 * @param empresa Empresa
+	 * @param beneficio_ofertado Beneficio ofertado
 	 */
 	public VagaEmprego(String funcao, String formacao, String empresa, Beneficio beneficio_ofertado) {
 		

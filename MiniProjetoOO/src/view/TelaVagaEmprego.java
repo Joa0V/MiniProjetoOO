@@ -27,8 +27,8 @@ public class TelaVagaEmprego implements ActionListener, ListSelectionListener{
 
 	/**
 	 * Metodo para definir a caracteristica da tela de listagem. A depender do parametro op, a lista sera destinada a empregos ou estagios
-	 * @param d
-	 * @param op
+	 * @param d Instancia de ControleDados que contem as oportunidades de emprego
+	 * @param op Seletor do tipo de oportunidade de emprego da lista. 1, para EmpregoFixo; 2, para Estagio
 	 */
 	
 	public void mostrarDados(ControleDados d, int op){
@@ -113,9 +113,9 @@ public class TelaVagaEmprego implements ActionListener, ListSelectionListener{
 	/**
 	 * Metodo para definir a caracteristica da tela de listagem. A depender do parametro op, a lista sera destinada a empregos ou estagios
 	 * os quais tenham o atributo Funcao igual ao parametro s
-	 * @param d
-	 * @param op
-	 * @param s
+	 * @param d Instancia de ControleDados que contem as oportunidades de emprego
+	 * @param op Seletor do tipo de oportunidade de emprego da lista. 1, para EmpregoFixo; 2, para Estagio
+	 * @param s Funcao buscada
 	 */
 	
 	public void mostrarDados(ControleDados d, int op, String s){
